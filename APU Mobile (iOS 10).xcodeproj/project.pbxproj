@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846B81EEF09DF002EC309 /* AppDelegate.swift */; };
+		2CF846BB1EEF09DF002EC309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846BA1EEF09DF002EC309 /* ViewController.swift */; };
+		2CF846BE1EEF09DF002EC309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BC1EEF09DF002EC309 /* Main.storyboard */; };
+		2CF846C01EEF09DF002EC309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BF1EEF09DF002EC309 /* Assets.xcassets */; };
+		2CF846C31EEF09DF002EC309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846C11EEF09DF002EC309 /* LaunchScreen.storyboard */; };
+		2CF846CE1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846CD1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift */; };
+		2CF846D91EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CF846CA1EEF09E0002EC309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF846AD1EEF09DF002EC309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF846B41EEF09DF002EC309;
+			remoteInfo = "APU Mobile (iOS 10)";
+		};
+		2CF846D51EEF09E0002EC309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF846AD1EEF09DF002EC309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF846B41EEF09DF002EC309;
+			remoteInfo = "APU Mobile (iOS 10)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CF846B51EEF09DF002EC309 /* APU Mobile (iOS 10).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APU Mobile (iOS 10).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF846B81EEF09DF002EC309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CF846BA1EEF09DF002EC309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CF846BD1EEF09DF002EC309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF846BF1EEF09DF002EC309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CF846C21EEF09DF002EC309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CF846C41EEF09DF002EC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF846C91EEF09E0002EC309 /* APU Mobile (iOS 10)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APU Mobile (iOS 10)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF846CD1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APU_Mobile__iOS_10_Tests.swift; sourceTree = "<group>"; };
+		2CF846CF1EEF09E0002EC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF846D41EEF09E0002EC309 /* APU Mobile (iOS 10)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APU Mobile (iOS 10)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APU_Mobile__iOS_10_UITests.swift; sourceTree = "<group>"; };
+		2CF846DA1EEF09E0002EC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF846B21EEF09DF002EC309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF846C61EEF09E0002EC309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF846D11EEF09E0002EC309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF846AC1EEF09DF002EC309 = {
+			isa = PBXGroup;
+			children = (
+				2CF846B71EEF09DF002EC309 /* APU Mobile (iOS 10) */,
+				2CF846CC1EEF09E0002EC309 /* APU Mobile (iOS 10)Tests */,
+				2CF846D71EEF09E0002EC309 /* APU Mobile (iOS 10)UITests */,
+				2CF846B61EEF09DF002EC309 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF846B61EEF09DF002EC309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF846B51EEF09DF002EC309 /* APU Mobile (iOS 10).app */,
+				2CF846C91EEF09E0002EC309 /* APU Mobile (iOS 10)Tests.xctest */,
+				2CF846D41EEF09E0002EC309 /* APU Mobile (iOS 10)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF846B71EEF09DF002EC309 /* APU Mobile (iOS 10) */ = {
+			isa = PBXGroup;
+			children = (
+				2CF846B81EEF09DF002EC309 /* AppDelegate.swift */,
+				2CF846BA1EEF09DF002EC309 /* ViewController.swift */,
+				2CF846BC1EEF09DF002EC309 /* Main.storyboard */,
+				2CF846BF1EEF09DF002EC309 /* Assets.xcassets */,
+				2CF846C11EEF09DF002EC309 /* LaunchScreen.storyboard */,
+				2CF846C41EEF09DF002EC309 /* Info.plist */,
+			);
+			path = "APU Mobile (iOS 10)";
+			sourceTree = "<group>";
+		};
+		2CF846CC1EEF09E0002EC309 /* APU Mobile (iOS 10)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF846CD1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift */,
+				2CF846CF1EEF09E0002EC309 /* Info.plist */,
+			);
+			path = "APU Mobile (iOS 10)Tests";
+			sourceTree = "<group>";
+		};
+		2CF846D71EEF09E0002EC309 /* APU Mobile (iOS 10)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */,
+				2CF846DA1EEF09E0002EC309 /* Info.plist */,
+			);
+			path = "APU Mobile (iOS 10)UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF846B41EEF09DF002EC309 /* APU Mobile (iOS 10) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF846DD1EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)" */;
+			buildPhases = (
+				2CF846B11EEF09DF002EC309 /* Sources */,
+				2CF846B21EEF09DF002EC309 /* Frameworks */,
+				2CF846B31EEF09DF002EC309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "APU Mobile (iOS 10)";
+			productName = "APU Mobile (iOS 10)";
+			productReference = 2CF846B51EEF09DF002EC309 /* APU Mobile (iOS 10).app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CF846C81EEF09E0002EC309 /* APU Mobile (iOS 10)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF846E01EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)Tests" */;
+			buildPhases = (
+				2CF846C51EEF09E0002EC309 /* Sources */,
+				2CF846C61EEF09E0002EC309 /* Frameworks */,
+				2CF846C71EEF09E0002EC309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF846CB1EEF09E0002EC309 /* PBXTargetDependency */,
+			);
+			name = "APU Mobile (iOS 10)Tests";
+			productName = "APU Mobile (iOS 10)Tests";
+			productReference = 2CF846C91EEF09E0002EC309 /* APU Mobile (iOS 10)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2CF846D31EEF09E0002EC309 /* APU Mobile (iOS 10)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF846E31EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)UITests" */;
+			buildPhases = (
+				2CF846D01EEF09E0002EC309 /* Sources */,
+				2CF846D11EEF09E0002EC309 /* Frameworks */,
+				2CF846D21EEF09E0002EC309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF846D61EEF09E0002EC309 /* PBXTargetDependency */,
+			);
+			name = "APU Mobile (iOS 10)UITests";
+			productName = "APU Mobile (iOS 10)UITests";
+			productReference = 2CF846D41EEF09E0002EC309 /* APU Mobile (iOS 10)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF846AD1EEF09DF002EC309 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kyle Nakamura (Student)";
+				TargetAttributes = {
+					2CF846B41EEF09DF002EC309 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					2CF846C81EEF09E0002EC309 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2CF846B41EEF09DF002EC309;
+					};
+					2CF846D31EEF09E0002EC309 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2CF846B41EEF09DF002EC309;
+					};
+				};
+			};
+			buildConfigurationList = 2CF846B01EEF09DF002EC309 /* Build configuration list for PBXProject "APU Mobile (iOS 10)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF846AC1EEF09DF002EC309;
+			productRefGroup = 2CF846B61EEF09DF002EC309 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF846B41EEF09DF002EC309 /* APU Mobile (iOS 10) */,
+				2CF846C81EEF09E0002EC309 /* APU Mobile (iOS 10)Tests */,
+				2CF846D31EEF09E0002EC309 /* APU Mobile (iOS 10)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF846B31EEF09DF002EC309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF846C31EEF09DF002EC309 /* LaunchScreen.storyboard in Resources */,
+				2CF846C01EEF09DF002EC309 /* Assets.xcassets in Resources */,
+				2CF846BE1EEF09DF002EC309 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF846C71EEF09E0002EC309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF846D21EEF09E0002EC309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF846B11EEF09DF002EC309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF846BB1EEF09DF002EC309 /* ViewController.swift in Sources */,
+				2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF846C51EEF09E0002EC309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF846CE1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF846D01EEF09E0002EC309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF846D91EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CF846CB1EEF09E0002EC309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF846B41EEF09DF002EC309 /* APU Mobile (iOS 10) */;
+			targetProxy = 2CF846CA1EEF09E0002EC309 /* PBXContainerItemProxy */;
+		};
+		2CF846D61EEF09E0002EC309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF846B41EEF09DF002EC309 /* APU Mobile (iOS 10) */;
+			targetProxy = 2CF846D51EEF09E0002EC309 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CF846BC1EEF09DF002EC309 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF846BD1EEF09DF002EC309 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF846C11EEF09DF002EC309 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF846C21EEF09DF002EC309 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF846DB1EEF09E0002EC309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF846DC1EEF09E0002EC309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF846DE1EEF09E0002EC309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2CF846DF1EEF09E0002EC309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2CF846E11EEF09E0002EC309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "APU Mobile (iOS 10)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APU Mobile (iOS 10).app/APU Mobile (iOS 10)";
+			};
+			name = Debug;
+		};
+		2CF846E21EEF09E0002EC309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "APU Mobile (iOS 10)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APU Mobile (iOS 10).app/APU Mobile (iOS 10)";
+			};
+			name = Release;
+		};
+		2CF846E41EEF09E0002EC309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "APU Mobile (iOS 10)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "APU Mobile (iOS 10)";
+			};
+			name = Debug;
+		};
+		2CF846E51EEF09E0002EC309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "APU Mobile (iOS 10)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "APU Mobile (iOS 10)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF846B01EEF09DF002EC309 /* Build configuration list for PBXProject "APU Mobile (iOS 10)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF846DB1EEF09E0002EC309 /* Debug */,
+				2CF846DC1EEF09E0002EC309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF846DD1EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF846DE1EEF09E0002EC309 /* Debug */,
+				2CF846DF1EEF09E0002EC309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CF846E01EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF846E11EEF09E0002EC309 /* Debug */,
+				2CF846E21EEF09E0002EC309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CF846E31EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF846E41EEF09E0002EC309 /* Debug */,
+				2CF846E51EEF09E0002EC309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CF846AD1EEF09DF002EC309 /* Project object */;
+}
