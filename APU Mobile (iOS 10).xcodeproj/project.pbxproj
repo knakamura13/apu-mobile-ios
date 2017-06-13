@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846B81EEF09DF002EC309 /* AppDelegate.swift */; };
-		2CF846BB1EEF09DF002EC309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846BA1EEF09DF002EC309 /* ViewController.swift */; };
+		2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846BA1EEF09DF002EC309 /* MainVC.swift */; };
 		2CF846BE1EEF09DF002EC309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BC1EEF09DF002EC309 /* Main.storyboard */; };
 		2CF846C01EEF09DF002EC309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BF1EEF09DF002EC309 /* Assets.xcassets */; };
 		2CF846C31EEF09DF002EC309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846C11EEF09DF002EC309 /* LaunchScreen.storyboard */; };
 		2CF846CE1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846CD1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift */; };
 		2CF846D91EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */; };
+		2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		2CF846B51EEF09DF002EC309 /* APU Mobile (iOS 10).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APU Mobile (iOS 10).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF846B81EEF09DF002EC309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CF846BA1EEF09DF002EC309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CF846BA1EEF09DF002EC309 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2CF846BD1EEF09DF002EC309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CF846BF1EEF09DF002EC309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF846C21EEF09DF002EC309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		2CF846D41EEF09E0002EC309 /* APU Mobile (iOS 10)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APU Mobile (iOS 10)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APU_Mobile__iOS_10_UITests.swift; sourceTree = "<group>"; };
 		2CF846DA1EEF09E0002EC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuWebVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C06A83C1EEF650A000A6B37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CF846BA1EEF09DF002EC309 /* MainVC.swift */,
+				2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2C06A83D1EEF650F000A6B37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2C06A83E1EEF6513000A6B37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2C06A83F1EEF651C000A6B37 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2CF846B81EEF09DF002EC309 /* AppDelegate.swift */,
+				2CF846C41EEF09DF002EC309 /* Info.plist */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		2CF846AC1EEF09DF002EC309 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +131,13 @@
 		2CF846B71EEF09DF002EC309 /* APU Mobile (iOS 10) */ = {
 			isa = PBXGroup;
 			children = (
-				2CF846B81EEF09DF002EC309 /* AppDelegate.swift */,
-				2CF846BA1EEF09DF002EC309 /* ViewController.swift */,
+				2C06A83F1EEF651C000A6B37 /* Util */,
+				2C06A83E1EEF6513000A6B37 /* Model */,
+				2C06A83D1EEF650F000A6B37 /* View */,
+				2C06A83C1EEF650A000A6B37 /* Controller */,
 				2CF846BC1EEF09DF002EC309 /* Main.storyboard */,
 				2CF846BF1EEF09DF002EC309 /* Assets.xcassets */,
 				2CF846C11EEF09DF002EC309 /* LaunchScreen.storyboard */,
-				2CF846C41EEF09DF002EC309 /* Info.plist */,
 			);
 			path = "APU Mobile (iOS 10)";
 			sourceTree = "<group>";
@@ -193,6 +228,7 @@
 				TargetAttributes = {
 					2CF846B41EEF09DF002EC309 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7GDSF452LB;
 						ProvisioningStyle = Automatic;
 					};
 					2CF846C81EEF09E0002EC309 = {
@@ -259,8 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF846BB1EEF09DF002EC309 /* ViewController.swift in Sources */,
+				2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */,
 				2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */,
+				2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
@@ -426,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
@@ -507,6 +546,7 @@
 				2CF846DF1EEF09E0002EC309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CF846E01EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +555,7 @@
 				2CF846E21EEF09E0002EC309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CF846E31EEF09E0002EC309 /* Build configuration list for PBXNativeTarget "APU Mobile (iOS 10)UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +564,7 @@
 				2CF846E51EEF09E0002EC309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

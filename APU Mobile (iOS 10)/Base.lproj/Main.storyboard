@@ -1,26 +1,127 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D7o-tk-66r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="APU_Mobile__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Content">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7r7-Ys-3OX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7r7-Ys-3OX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6mw-su-CW7"/>
+                            <constraint firstAttribute="trailing" secondItem="7r7-Ys-3OX" secondAttribute="trailing" id="Mi0-ia-izd"/>
+                            <constraint firstItem="7r7-Ys-3OX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aPO-DC-yyy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7r7-Ys-3OX" secondAttribute="bottom" id="x3Y-rv-rT0"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NwP-lc-rII"/>
+                    <connections>
+                        <outlet property="webView" destination="7r7-Ys-3OX" id="lgv-N8-rfI"/>
+                        <segue destination="X34-go-R91" kind="show" identifier="segueToMenu" animates="NO" id="Ydc-8d-h8x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S0Q-kV-maU">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="D7o-tk-66r" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b6Z-Or-5Uy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JEz-ZD-1zk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOD-JP-rT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="123"/>
+        </scene>
+        <!--Menu WebVC-->
+        <scene sceneID="ZZc-85-dto">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="X34-go-R91" customClass="MenuWebVC" customModule="APU_Mobile__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yqy-Vl-D4r"/>
+                        <viewControllerLayoutGuide type="bottom" id="fFL-Wf-PzU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WzO-ij-IIB" userLabel="Content">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxE-Sn-NdE">
+                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgl-KO-Dzs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkp-l4-QoN" userLabel="back button">
+                                        <rect key="frame" x="8" y="5.5" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="Pi0-cW-HhQ"/>
+                                            <constraint firstAttribute="height" constant="37" id="cMF-E9-b6r"/>
+                                        </constraints>
+                                        <state key="normal" image="btn-back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="navigateBack:" destination="X34-go-R91" eventType="touchUpInside" id="x2o-kO-EFE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rkp-l4-QoN" firstAttribute="leading" secondItem="bgl-KO-Dzs" secondAttribute="leading" constant="8" id="2e5-B7-a2y"/>
+                                    <constraint firstItem="rkp-l4-QoN" firstAttribute="centerY" secondItem="bgl-KO-Dzs" secondAttribute="centerY" id="UBd-Lk-x18"/>
+                                    <constraint firstAttribute="height" constant="48" id="bk8-d4-nTI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yxE-Sn-NdE" firstAttribute="leading" secondItem="WzO-ij-IIB" secondAttribute="leading" id="4Yj-lD-6PW"/>
+                            <constraint firstAttribute="trailing" secondItem="bgl-KO-Dzs" secondAttribute="trailing" id="CxW-xq-aii"/>
+                            <constraint firstItem="bgl-KO-Dzs" firstAttribute="leading" secondItem="WzO-ij-IIB" secondAttribute="leading" id="ILB-KB-06a"/>
+                            <constraint firstItem="yxE-Sn-NdE" firstAttribute="top" secondItem="bgl-KO-Dzs" secondAttribute="bottom" id="dCE-em-Zpm"/>
+                            <constraint firstAttribute="trailing" secondItem="yxE-Sn-NdE" secondAttribute="trailing" id="nPy-Mu-smg"/>
+                            <constraint firstItem="bgl-KO-Dzs" firstAttribute="top" secondItem="WzO-ij-IIB" secondAttribute="top" id="v8X-gS-e77"/>
+                            <constraint firstItem="fFL-Wf-PzU" firstAttribute="top" secondItem="yxE-Sn-NdE" secondAttribute="bottom" id="zrR-Dt-TWS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="yxE-Sn-NdE" id="71Q-Q6-XaN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDh-GU-b8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn-back" width="100" height="100"/>
+    </resources>
 </document>
