@@ -48,12 +48,19 @@ class MainVC: UIViewController, UIWebViewDelegate {
         _ = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
             "script.type = 'text/javascript';" +
             "script.text = \"function insertLoginDetails() { " +
+                // Force click() sign in button
+                "try { document.getElementsByTagName('a')[0].click(); }" +
+                "catch (err) { /* Do nothing if error thrown */ }" +
+            
+                // Get username and password fields by TagName
                 "var userNameField = document.getElementsByTagName('input')[1];" +
                 "var passwordField = document.getElementsByTagName('input')[2];" +
             
+                // Inject username and password strings into input fields
                 "userNameField.value = '\(username!)';" +
                 "passwordField.value = '\(password!)';" +
             
+                // Force click() login button
                 "var loginButton = document.getElementsByTagName('button')[1];" +
                 "loginButton.click();" +
             "}\";" +
