@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CE780751EF057EF0024FE3D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE780741EF057EF0024FE3D /* Global.swift */; };
 		2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846B81EEF09DF002EC309 /* AppDelegate.swift */; };
 		2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846BA1EEF09DF002EC309 /* MainVC.swift */; };
 		2CF846BE1EEF09DF002EC309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BC1EEF09DF002EC309 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CE780741EF057EF0024FE3D /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		2CF846B51EEF09DF002EC309 /* APU Mobile (iOS 10).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APU Mobile (iOS 10).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF846B81EEF09DF002EC309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF846BA1EEF09DF002EC309 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		2C06A83E1EEF6513000A6B37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CE780741EF057EF0024FE3D /* Global.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -223,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Kyle Nakamura (Student)";
 				TargetAttributes = {
 					2CF846B41EEF09DF002EC309 = {
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE780751EF057EF0024FE3D /* Global.swift in Sources */,
 				2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */,
 				2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */,
 				2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */,
@@ -369,6 +373,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -376,6 +381,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -426,6 +432,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -433,6 +440,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -465,9 +473,10 @@
 		2CF846DE1EEF09E0002EC309 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,9 +488,10 @@
 		2CF846DF1EEF09E0002EC309 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
