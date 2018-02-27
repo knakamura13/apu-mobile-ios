@@ -9,6 +9,8 @@
 import UIKit
 
 var shouldRepeat: Bool = true
+var testBool: Bool = false
+var testVar: Int = 0
 
 class MainVC: UIViewController, UIWebViewDelegate {
     
@@ -42,7 +44,6 @@ class MainVC: UIViewController, UIWebViewDelegate {
     }
     
     func loginUser(username: String?, password: String?) {
-        print("KYLE: loginUser did run")
         // Run JavaScript script to automatically login the user
         _ = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
             "script.type = 'text/javascript';" +
@@ -62,13 +63,13 @@ class MainVC: UIViewController, UIWebViewDelegate {
     
     // Web page finishes loading
     func webViewDidFinishLoad(_ webView: UIWebView) {
-//        webView.stringByEvaluatingJavaScript(from: "document.documentElement.style.webkitUserSelect='none'")!     // Disable user selection
+        if testVar < 2 {
+            loginUser(username: self.username, password: self.password)
+        }
         
-        loginUser(username: self.username, password: self.password)
-        
-        let when = DispatchTime.now() + 10 // Should this be +1 or does +0 work as well?
+        let when = DispatchTime.now() + 10
         DispatchQueue.main.asyncAfter(deadline: when){
-            if shouldRepeat {
+            if testVar < 2 {
                 self.loginUser(username: self.username, password: self.password)
             }
         }
@@ -77,14 +78,15 @@ class MainVC: UIViewController, UIWebViewDelegate {
     // Function is called whenever a webpage is about to load.
     // Ensures that non-mobile URLs get directed to a seperate VC to prevent pages from overriding/hiding the mobile.apu.edu interface.
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        print("HELLO")
         let requestString = String(describing: request)
+        if requestString.contains("dashboard") {
+            testVar += 1
+        }
         clickedHyperlinkURL = requestString
-        
         
         if navigationType == .linkClicked {
             if requestString.contains(environment) {
-                // navigate normally
+            // navigate normally
             } else if requestString.contains("youtube.com") {
                 if let url = URL(string: String(describing: request)) {
                     UIApplication.shared.open(url, options: [:])            // open the url in Youtube, or Safari if Youtube fails
