@@ -478,7 +478,7 @@
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.Mobile-Test-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -493,7 +493,7 @@
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.Mobile-Test-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;

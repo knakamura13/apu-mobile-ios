@@ -16,9 +16,9 @@ class MainVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
     
-    let environment = "mobile" // Options: mobile, mobile-beta, mobile-kyle, mobile-monte, mobile-test, mobile-upgrade, mobile-vanilla
-    let username = "knakamura13"
-    let password = "Bwilkinsp7" // pls don't hack me
+    let environment = "mobile-test" // Options: mobile, mobile-beta, mobile-kyle, mobile-monte, mobile-test, mobile-upgrade, mobile-vanilla
+    let username = "saspinall12"
+    let password = "OkuCDUWicav2"
     
     var timeBool: Bool! = false
     var timer: Timer!
@@ -108,7 +108,7 @@ class MainVC: UIViewController, UIWebViewDelegate {
     }
     
     // Hide the status bar to enable full screen view
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
