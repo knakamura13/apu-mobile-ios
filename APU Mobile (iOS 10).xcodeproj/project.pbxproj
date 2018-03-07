@@ -16,6 +16,7 @@
 		2CF846CE1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846CD1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift */; };
 		2CF846D91EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */; };
 		2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */; };
+		BFB4F0702050A495002CA177 /* quickSegueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB4F06F2050A495002CA177 /* quickSegueVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APU_Mobile__iOS_10_UITests.swift; sourceTree = "<group>"; };
 		2CF846DA1EEF09E0002EC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuWebVC.swift; sourceTree = "<group>"; };
+		BFB4F06F2050A495002CA177 /* quickSegueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickSegueVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				2CF846BA1EEF09DF002EC309 /* MainVC.swift */,
 				2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */,
+				BFB4F06F2050A495002CA177 /* quickSegueVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				2CE780751EF057EF0024FE3D /* Global.swift in Sources */,
 				2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */,
+				BFB4F0702050A495002CA177 /* quickSegueVC.swift in Sources */,
 				2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */,
 				2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */,
 			);
@@ -476,9 +480,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.multi-environment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -491,9 +495,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "APU Mobile (iOS 10)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.APU-Mobile--iOS-10-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakamura.multi-environment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;

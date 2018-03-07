@@ -8,21 +8,11 @@
 
 import UIKit
 
-var shouldRepeat: Bool = true
-var testBool: Bool = false
-var testVar: Int = 0
-
 class MainVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
     
-    let environment = "mobile" // Options: mobile, mobile-beta, mobile-kyle, mobile-monte, mobile-test, mobile-upgrade, mobile-vanilla
-    let username = "knakamura13"
-    let password = "Bwilkinsp7" // pls don't hack me
-    
-    var timeBool: Bool! = false
-    var timer: Timer!
-    var timer2: Timer!
+    let environment = environments["prod"]!
     
     // Runs each time this VC appears
     override func viewWillAppear(_ animated: Bool) {
@@ -31,64 +21,33 @@ class MainVC: UIViewController, UIWebViewDelegate {
         
         // If the user pressed the Home button from the previous MenuWebVC
         if navHomePressed {
-            let url = URL(string: "https://\(environment).apu.edu")
-            webView.loadRequest(URLRequest(url: url!))
+            reloadWebPage()
             navHomePressed = false
         }
-    }
-    
-    // Runs one time during app startup
-    override func viewDidLoad() {
-        let url = URL(string: "https://\(environment).apu.edu")
-        webView.loadRequest(URLRequest(url: url!))
-    }
-    
-    func loginUser(username: String?, password: String?) {
-        // Run JavaScript script to automatically login the user
-        _ = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
-            "script.type = 'text/javascript';" +
-            "script.text = \"function insertLoginDetails() { " +
-                // Force click() sign in button
-                "try { document.getElementsByTagName('a')[0].click(); }" +
-                "catch (err) { /* Do nothing if error thrown */ }" +
-            
-                // Get username and password fields by TagName
-                "var userNameField = document.getElementsByTagName('input')[1];" +
-                "var passwordField = document.getElementsByTagName('input')[2];" +
-            
-                // Inject username and password strings into input fields
-                "userNameField.value = '\(username!)';" +
-                "passwordField.value = '\(password!)';" +
-            
-                // Force click() login button
-                "var loginButton = document.getElementsByTagName('button')[1];" +
-                "loginButton.click();" +
-            "}\";" +
-            "document.getElementsByTagName('head')[0].appendChild(script);")!
-        webView.stringByEvaluatingJavaScript(from: "insertLoginDetails();")!
-    }
-    
-    // Web page finishes loading
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        if testVar < 2 {
-            loginUser(username: self.username, password: self.password)
-        }
         
-        let when = DispatchTime.now() + 10
-        DispatchQueue.main.asyncAfter(deadline: when){
-            if testVar < 2 {
-                self.loginUser(username: self.username, password: self.password)
-            }
+        if globalTestUrl != nil {
+            let url = URL(string: "https://www.apu.edu")!
+            self.webView.delegate = self
+            self.webView.loadRequest(URLRequest(url: url))
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        reloadWebPage()
+    }
+    
+    func reloadWebPage() {
+        let url = URL(string: "https://\(environment).apu.edu")!
+        self.webView.delegate = self
+        self.webView.loadRequest(URLRequest(url: url))
+        print("KYLE: Current environment: \(environment)")
     }
     
     // Function is called whenever a webpage is about to load.
     // Ensures that non-mobile URLs get directed to a seperate VC to prevent pages from overriding/hiding the mobile.apu.edu interface.
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         let requestString = String(describing: request)
-        if requestString.contains("dashboard") {
-            testVar += 1
-        }
         clickedHyperlinkURL = requestString
         
         if navigationType == .linkClicked {
@@ -107,8 +66,7 @@ class MainVC: UIViewController, UIWebViewDelegate {
         return true
     }
     
-    // Hide the status bar to enable full screen view
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }

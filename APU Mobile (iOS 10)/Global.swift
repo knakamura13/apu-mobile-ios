@@ -8,9 +8,16 @@
 
 import Foundation
 
-/*
-     These global variables are each used in more than one VC
- */
-
 var clickedHyperlinkURL = String()
 var navHomePressed: Bool = false
+
+let environments: [String : String] = [
+    "prod"      : "mobile",
+    "kyle"      : "mobile-kyle",
+    "monte"     : "mobile-monte",
+    "test"      : "mobile-test",
+    "dev"       : "mobile-dev",
+    "beta"      : "mobile-beta",
+    "vanilla"   : "mobile-vanilla",
+    "upgrade"   : "mobile-upgrade"
+]

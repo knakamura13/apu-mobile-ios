@@ -8,16 +8,27 @@
 
 import UIKit
 
+var globalTestUrl: String!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        globalTestUrl = "https://www.google.com"
+        
+        // Access the storyboard and fetch an instance of the view controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController: quickSegueVC = storyboard.instantiateViewController(withIdentifier: "quickSegueVC") as! quickSegueVC
+        
+        // Then push that view controller onto the navigation stack
+        let rootViewController = self.window!.rootViewController as! UINavigationController
+        rootViewController.pushViewController(viewController, animated: true)
+        
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
