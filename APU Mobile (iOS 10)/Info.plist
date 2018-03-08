@@ -61,24 +61,32 @@
                 <string>kyle</string>
             <key>UIApplicationShortcutItemTitle</key>
                 <string>Mobile-Kyle</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+                <string>kyleIcon</string>
         </dict>
         <dict>
             <key>UIApplicationShortcutItemType</key>
                 <string>monte</string>
             <key>UIApplicationShortcutItemTitle</key>
                 <string>Mobile-Monte</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+                <string>monteIcon</string>
         </dict>
         <dict>
             <key>UIApplicationShortcutItemType</key>
                 <string>test</string>
             <key>UIApplicationShortcutItemTitle</key>
                 <string>Mobile-Test</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+                <string>testIcon</string>
         </dict>
         <dict>
             <key>UIApplicationShortcutItemType</key>
                 <string>beta</string>
             <key>UIApplicationShortcutItemTitle</key>
                 <string>Mobile-Beta</string>
+            <key>UIApplicationShortcutItemIconFile</key>
+                <string>betaIcon</string>
         </dict>
 	</array>
 </dict>
