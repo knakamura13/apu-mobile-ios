@@ -11,13 +11,4 @@ import Foundation
 var clickedHyperlinkURL = String()
 var navHomePressed: Bool = false
 
-let environments: [String : String] = [
-    "prod"      : "mobile",
-    "kyle"      : "mobile-kyle",
-    "monte"     : "mobile-monte",
-    "test"      : "mobile-test",
-    "dev"       : "mobile-dev",
-    "beta"      : "mobile-beta",
-    "vanilla"   : "mobile-vanilla",
-    "upgrade"   : "mobile-upgrade"
-]
+var globalUrl: String! = "https://mobile.apu.edu"

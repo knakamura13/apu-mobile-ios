@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -147,26 +146,10 @@
                     <view key="view" contentMode="scaleToFill" id="ebY-du-ZZh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpo-IA-r9p">
-                                <rect key="frame" x="67" y="342" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="axZ-KE-O96"/>
-                                    <constraint firstAttribute="width" constant="240" id="xAz-lI-XKq"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="rpo-IA-r9p" secondAttribute="trailing" constant="52" id="Ch2-OP-Pnt"/>
-                            <constraint firstItem="rpo-IA-r9p" firstAttribute="leading" secondItem="ebY-du-ZZh" secondAttribute="leadingMargin" constant="51" id="NhF-Dx-5pa"/>
-                            <constraint firstItem="k2S-In-b7n" firstAttribute="top" secondItem="rpo-IA-r9p" secondAttribute="bottom" constant="308" id="XRh-7d-Ua5"/>
-                            <constraint firstItem="rpo-IA-r9p" firstAttribute="top" secondItem="C5u-BC-XV8" secondAttribute="bottom" constant="298" id="wjl-hO-HPP"/>
-                        </constraints>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="quickToMainSegue" id="P5S-SK-bgG"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="quickToMainSegue" id="P5S-SK-bgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzC-cU-3Fs" userLabel="First Responder" sceneMemberID="firstResponder"/>

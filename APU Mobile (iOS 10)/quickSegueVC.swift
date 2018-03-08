@@ -9,15 +9,8 @@
 import UIKit
 
 class quickSegueVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
-//        self.navigationController?.popViewController(animated: false)
-        performSegue(withIdentifier: "quickToMainSegue", sender: nil)
+        self.navigationController?.popViewController(animated: false)
+//        performSegue(withIdentifier: "quickToMainSegue", sender: nil)
     }
 }

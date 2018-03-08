@@ -12,36 +12,12 @@ class MainVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
     
-    let environment = environments["prod"]!
-    
-    // Runs each time this VC appears
     override func viewWillAppear(_ animated: Bool) {
         webView.delegate = self
         webView.scrollView.bounces = false     // prevent webpage from moving when user scrolls
         
-        // If the user pressed the Home button from the previous MenuWebVC
-        if navHomePressed {
-            reloadWebPage()
-            navHomePressed = false
-        }
-        
-        if globalTestUrl != nil {
-            let url = URL(string: "https://www.apu.edu")!
-            self.webView.delegate = self
-            self.webView.loadRequest(URLRequest(url: url))
-        }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        reloadWebPage()
-    }
-    
-    func reloadWebPage() {
-        let url = URL(string: "https://\(environment).apu.edu")!
-        self.webView.delegate = self
+        let url = URL(string: globalUrl)!
         self.webView.loadRequest(URLRequest(url: url))
-        print("KYLE: Current environment: \(environment)")
     }
     
     // Function is called whenever a webpage is about to load.
@@ -51,7 +27,7 @@ class MainVC: UIViewController, UIWebViewDelegate {
         clickedHyperlinkURL = requestString
         
         if navigationType == .linkClicked {
-            if requestString.contains(environment) {
+            if requestString.contains("mobile") {
             // navigate normally
             } else if requestString.contains("youtube.com") {
                 if let url = URL(string: String(describing: request)) {

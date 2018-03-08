@@ -56,14 +56,30 @@
 	</array>
 	<key>UIApplicationShortcutItems</key>
 	<array>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).OpenBlue</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Open Blue</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Open with a blue background</string>
-		</dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+                <string>kyle</string>
+            <key>UIApplicationShortcutItemTitle</key>
+                <string>Mobile-Kyle</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+                <string>monte</string>
+            <key>UIApplicationShortcutItemTitle</key>
+                <string>Mobile-Monte</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+                <string>test</string>
+            <key>UIApplicationShortcutItemTitle</key>
+                <string>Mobile-Test</string>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemType</key>
+                <string>beta</string>
+            <key>UIApplicationShortcutItemTitle</key>
+                <string>Mobile-Beta</string>
+        </dict>
 	</array>
 </dict>
 </plist>
