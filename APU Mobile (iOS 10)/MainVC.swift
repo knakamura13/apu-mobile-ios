@@ -18,7 +18,7 @@ class MainVC: UIViewController, UIWebViewDelegate {
     
     let environment = "mobile" // Options: mobile, mobile-beta, mobile-kyle, mobile-monte, mobile-test, mobile-upgrade, mobile-vanilla
     let username = "knakamura13"
-    let password = "Bwilkinsp7" // pls don't hack me
+    let password = "bWilkinsp7" // pls don't hack me
     
     var timeBool: Bool! = false
     var timer: Timer!
@@ -45,7 +45,8 @@ class MainVC: UIViewController, UIWebViewDelegate {
     
     func loginUser(username: String?, password: String?) {
         // Run JavaScript script to automatically login the user
-        _ = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
+        _ = webView.stringByEvaluatingJavaScript(from:
+            "var script = document.createElement('script');" +
             "script.type = 'text/javascript';" +
             "script.text = \"function insertLoginDetails() { " +
                 // Force click() sign in button
@@ -71,13 +72,13 @@ class MainVC: UIViewController, UIWebViewDelegate {
     // Web page finishes loading
     func webViewDidFinishLoad(_ webView: UIWebView) {
         if testVar < 2 {
-            loginUser(username: self.username, password: self.password)
+//            loginUser(username: self.username, password: self.password)
         }
         
-        let when = DispatchTime.now() + 10
-        DispatchQueue.main.asyncAfter(deadline: when){
+        var when = DispatchTime.now() + 10
+        DispatchQueue.main.asyncAfter(deadline: when) {
             if testVar < 2 {
-                self.loginUser(username: self.username, password: self.password)
+//                self.loginUser(username: self.username, password: self.password)
             }
         }
     }
