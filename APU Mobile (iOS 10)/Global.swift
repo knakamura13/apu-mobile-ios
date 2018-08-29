@@ -8,9 +8,8 @@
 
 import Foundation
 
-/*
-     These global variables are each used in more than one VC
- */
-
+/// Globally stored URL upon link click
 var clickedHyperlinkURL = String()
+
+/// Record when user navigates back to APUMobileVC.swift
 var navHomePressed: Bool = false

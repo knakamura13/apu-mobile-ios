@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		2CE780751EF057EF0024FE3D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE780741EF057EF0024FE3D /* Global.swift */; };
 		2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846B81EEF09DF002EC309 /* AppDelegate.swift */; };
-		2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846BA1EEF09DF002EC309 /* MainVC.swift */; };
+		2CF846BB1EEF09DF002EC309 /* APUMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846BA1EEF09DF002EC309 /* APUMobileVC.swift */; };
 		2CF846BE1EEF09DF002EC309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BC1EEF09DF002EC309 /* Main.storyboard */; };
 		2CF846C01EEF09DF002EC309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846BF1EEF09DF002EC309 /* Assets.xcassets */; };
 		2CF846C31EEF09DF002EC309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF846C11EEF09DF002EC309 /* LaunchScreen.storyboard */; };
 		2CF846CE1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846CD1EEF09E0002EC309 /* APU_Mobile__iOS_10_Tests.swift */; };
 		2CF846D91EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */; };
-		2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */; };
+		2CFA3C3E1EEF22F5007761E4 /* PopoutWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA3C3D1EEF22F5007761E4 /* PopoutWebViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		2CE780741EF057EF0024FE3D /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		2CF846B51EEF09DF002EC309 /* APU Mobile (iOS 10).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APU Mobile (iOS 10).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF846B81EEF09DF002EC309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CF846BA1EEF09DF002EC309 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		2CF846BA1EEF09DF002EC309 /* APUMobileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APUMobileVC.swift; sourceTree = "<group>"; };
 		2CF846BD1EEF09DF002EC309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CF846BF1EEF09DF002EC309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF846C21EEF09DF002EC309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		2CF846D41EEF09E0002EC309 /* APU Mobile (iOS 10)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APU Mobile (iOS 10)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF846D81EEF09E0002EC309 /* APU_Mobile__iOS_10_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APU_Mobile__iOS_10_UITests.swift; sourceTree = "<group>"; };
 		2CF846DA1EEF09E0002EC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuWebVC.swift; sourceTree = "<group>"; };
+		2CFA3C3D1EEF22F5007761E4 /* PopoutWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoutWebViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 		2C06A83C1EEF650A000A6B37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2CF846BA1EEF09DF002EC309 /* MainVC.swift */,
-				2CFA3C3D1EEF22F5007761E4 /* MenuWebVC.swift */,
+				2CF846BA1EEF09DF002EC309 /* APUMobileVC.swift */,
+				2CFA3C3D1EEF22F5007761E4 /* PopoutWebViewVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,9 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE780751EF057EF0024FE3D /* Global.swift in Sources */,
-				2CF846BB1EEF09DF002EC309 /* MainVC.swift in Sources */,
+				2CF846BB1EEF09DF002EC309 /* APUMobileVC.swift in Sources */,
 				2CF846B91EEF09DF002EC309 /* AppDelegate.swift in Sources */,
-				2CFA3C3E1EEF22F5007761E4 /* MenuWebVC.swift in Sources */,
+				2CFA3C3E1EEF22F5007761E4 /* PopoutWebViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

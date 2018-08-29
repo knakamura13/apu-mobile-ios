@@ -1,5 +1,5 @@
 //
-//  MenuWebVC.swift
+//  PopoutWebViewVC.swift
 //  APU Mobile (iOS 10)
 //
 //  Created by Kyle Nakamura (Student) on 6/12/17.
@@ -8,9 +8,14 @@
 
 import UIKit
 
-class MenuWebVC: UIViewController, UIWebViewDelegate {
+class PopoutWebViewVC: UIViewController, UIWebViewDelegate {
+    
+    // MARK: IBOutlets
     
     @IBOutlet weak var webView: UIWebView!
+    
+    
+    // MARK: View Loading
     
     override func viewWillAppear(_ animated: Bool) {
         webView.delegate = self
@@ -18,6 +23,9 @@ class MenuWebVC: UIViewController, UIWebViewDelegate {
         let url = URL(string: clickedHyperlinkURL)
         webView.loadRequest(URLRequest(url: url!))     // load url from previous page click
     }
+    
+    
+    // MARK: IBActions
     
     // Go back to MainVC, reload webview with mobile.apu.edu
     @IBAction func navHome(_ sender: Any) {
@@ -30,12 +38,16 @@ class MenuWebVC: UIViewController, UIWebViewDelegate {
         self.navigationController?.popViewController(animated: false)
     }
     
-    // When webView finishes loading
+    
+    // MARK: Web View
+    
     func webViewDidFinishLoad(_ webView: UIWebView) {
         webView.stringByEvaluatingJavaScript(from: "document.documentElement.style.webkitUserSelect='text'")!   // Re-enable text selection
     }
     
-    // Hide the status bar to enable full screen view
+    /**
+     Hide the status bar to enable full screen view
+    */
     override var prefersStatusBarHidden: Bool {
         return true
     }

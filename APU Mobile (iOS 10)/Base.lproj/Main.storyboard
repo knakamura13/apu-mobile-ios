@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--MobileVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="APU_Mobile__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="APUMobileVC" customModule="APU_Mobile__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="NwP-lc-rII"/>
                     <connections>
                         <outlet property="webView" destination="7r7-Ys-3OX" id="lgv-N8-rfI"/>
-                        <segue destination="X34-go-R91" kind="show" identifier="segueToMenu" animates="NO" id="Ydc-8d-h8x"/>
+                        <segue destination="X34-go-R91" kind="show" identifier="segueToPopoutWebViewVC" animates="NO" id="Ydc-8d-h8x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="-729" y="123"/>
         </scene>
-        <!--Menu WebVC-->
+        <!--Popout Web ViewVC-->
         <scene sceneID="ZZc-85-dto">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="X34-go-R91" customClass="MenuWebVC" customModule="APU_Mobile__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="X34-go-R91" customClass="PopoutWebViewVC" customModule="APU_Mobile__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yqy-Vl-D4r"/>
                         <viewControllerLayoutGuide type="bottom" id="fFL-Wf-PzU"/>
